@@ -1,0 +1,37 @@
+/* AppliedJobs.css */
+
+.applied-jobs {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.applied-jobs h2 {
+    text-align: center;
+    color: #333;
+}
+
+.applied-jobs ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.applied-jobs li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.applied-jobs a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.applied-jobs a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+/* JobList.css */
+
+.job-listing {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.job-listing ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-listing li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.job-listing a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.job-listing a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

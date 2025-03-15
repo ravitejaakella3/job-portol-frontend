@@ -1,0 +1,60 @@
+/* ViewApplications.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.application-container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.application-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.application-container p{
+    text-align: center;
+    color: #333;
+}
+
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.application-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.application-container li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.application-container button {
+    text-align: center;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.application-container button:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,38 @@
+/* RecruiterDashboard.css */
+
+
+.dashboard-container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.dashboard-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-container li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.dashboard-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.dashboard-container a:hover {
+    text-decoration: underline;
+}
