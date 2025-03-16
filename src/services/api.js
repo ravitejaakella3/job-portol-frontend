@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5030";
+const API_BASE = "https://job-portol-backend.onrender.com";
 
 const isTokenExpired = (token) => {
   if (!token) return true;
