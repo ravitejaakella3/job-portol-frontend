@@ -19,7 +19,7 @@ const PostJob = () => {
     const token = localStorage.getItem('token');
 
     try {
-      const res = await fetch("http://localhost:5030/jobs", {
+      const res = await fetch("https://job-portol-backend.onrender.com/jobs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

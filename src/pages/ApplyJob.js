@@ -22,7 +22,7 @@ const ApplyJob = () => {
     e.preventDefault();
   //console.log('Submitting application for job ID:', jobId); // Log job ID
     try {
-      const res = await fetch(`http://localhost:5030/jobs/${jobId}/apply`, {
+      const res = await fetch(`https://job-portol-backend.onrender.com/jobs/${jobId}/apply`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
