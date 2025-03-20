@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './Register.css';
 
 const Register = () => {
-  const [formData, setFormData] = useState({ email: "", password: "", role: "JobSeeker" });
+  const [formData, setFormData] = useState({ name:"", email: "", password: "", role: "JobSeeker" });
   const navigate = useNavigate();
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
