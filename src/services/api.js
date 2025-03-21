@@ -48,20 +48,36 @@ export const postJob = async (jobData, token) => {
 
 // New function to fetch applied jobs
 export const fetchAppliedJobs = async (userId) => {
-  const token = localStorage.getItem('token'); // Get the token from local storage
-  console.log('Token before fetching applied jobs:', token); // Log the token
-  const response = await fetch(`${API_BASE}/jobs/users/${userId}/applied-jobs`, {
-    method: 'GET',
-    headers: {
-      'Authorization': `Bearer ${token}`, // Include the token in the Authorization header
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch applied jobs');
+  if (!userId) {
+    return [];
   }
 
-  return response.json(); // Return the response data
+  try {
+    const token = localStorage.getItem('token');
+    const response = await fetch(`${API_BASE}/jobs/users/${userId}/applied-jobs`, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    // Handle 404 and other status codes gracefully
+    if (response.status === 404) {
+      return [];
+    }
+
+    if (!response.ok) {
+      return [];
+    }
+
+    const data = await response.json();
+    return data;
+    
+  } catch (error) {
+    console.log('Error in fetchAppliedJobs:', error);
+    return []; // Return empty array instead of throwing
+  }
 };
 
 // Example of how to define loginUser in your api.js
